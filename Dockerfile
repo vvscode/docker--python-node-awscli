@@ -17,6 +17,6 @@ RUN \
   wget -qO- https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
   apt-get update && \
   apt-get install -yqq nodejs yarn && \
-  pip install -U pip && pip install pipenv && pip install awscli\
+  pip install -U pip && pip install pipenv && pip install awscli &&\
   npm i -g npm@latest && \
   rm -rf /var/lib/apt/lists/*
